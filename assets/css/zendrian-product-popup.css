@@ -16,7 +16,21 @@
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
-    max-width: 500px;
+    max-width: 800px;
+    max-height: 80vh; /* 80% of viewport height */
+    overflow-y: auto; /* scrollbar if the content is longer */
+    word-break: break-word;
+}
+
+@media (max-width: 767px) { /* Example: For small screens */
+    .zpp-modal-content {
+        font-size: 14px; /* Decrease font size */
+    }
+}
+
+.zpp-modal-content img {
+    max-width: 100%;
+    height: auto;
 }
 
 .zpp-close {
